@@ -1,9 +1,9 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Spinnaker Pre Install
+name: ArgoCD Pre Install
 env:
   ArgoCD_VERSION: 1.26.6
-  NEW_REGISTRY_URL: "http://docker.io/lizeyang123"
+  NEW_REGISTRY_URL: "docker.io/lizeyang123"
 
 on:
   push:
