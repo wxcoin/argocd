@@ -21,7 +21,7 @@ jobs:
         docker pull quay.io/argoproj/argocd:v2.1.3
         
         docker tag ghcr.io/dexidp/dex:v2.27.0  ${NEW_REGISTRY_URL}/dex:v2.27.0
-        docekr tag quay.io/argoproj/argocd:v2.1.3  ${NEW_REGISTRY_URL}/argocd:v2.1.3
+        docker tag quay.io/argoproj/argocd:v2.1.3  ${NEW_REGISTRY_URL}/argocd:v2.1.3
         
         docker login -u ${{ secrets.DOCKER_USER}} -p ${{ secrets.DOCKER_PASSWD}} ${NEW_REGISTRY_URL}
         docker push ${NEW_REGISTRY_URL}/dex:v2.27.0
