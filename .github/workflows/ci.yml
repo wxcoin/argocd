@@ -3,7 +3,7 @@
 name: Spinnaker Pre Install
 env:
   ArgoCD_VERSION: 1.26.6
-  NEW_REGISTRY_URL: "lizeyang123"
+  NEW_REGISTRY_URL: "http://docker.io/lizeyang123"
 
 on:
   push:
